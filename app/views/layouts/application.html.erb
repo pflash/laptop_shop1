@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LaptopShop1</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+| <%=  link_to "product catalogue", products_path %> |
+<%= link_to "Leave Site", :controller => "welcome", :action => "thank_you" %> |
+<%=  link_to "Register", :controller => "welcome", :action => "register" %> |
+<%= link_to "Home", :controller => "welcome", :action => "home" %> |
+<%= link_to "create user", new_user_path %>
+
+<%= yield %>
+
+</body>
+</html>
+
+
+
+
+
+
